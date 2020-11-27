@@ -35,7 +35,6 @@ client.on("ready", () => {
 	});
 });
 
-mongoose.connect(process.env.MONGO_URL);
 mongoose.connect(process.env.MONGO_URL, function (err) {
 	if (err) throw err;
 	console.log('Successfully connected to MongoDB');
